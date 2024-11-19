@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/***Dark Mdoe CSS***/
+body.darkThemeAct{background-color:#2d383c;}
+body{background-color: #fff;}
+
+h1,h2,h3,h4,h5,h6,a,span,div,artical{
+    color:#333;
+}
+.darkThemeAct h1,
+.darkThemeAct h2,
+.darkThemeAct h3,
+.darkThemeAct h4,
+.darkThemeAct h5,
+.darkThemeAct h6,
+.darkThemeAct a,
+.darkThemeAct span,
+.darkThemeAct div,
+.darkThemeAct artical{
+    color:#fff;
+}
+
+.flex-main {
+    transform: translate(0px,65px);
+}

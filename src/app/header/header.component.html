@@ -1,0 +1,29 @@
+<header>
+    <div class="flick-nav">
+        <div class="logo">
+            <div class="img-logo head-logo">
+                <a routerLink="/" routerLinkActive="active">
+                    <img src="/media/light-logo.png" alt="light-logo" [ngClass]="{'hide': !darkModeAction}">
+                    <img src="/media/dark-logo.png" alt="dark-logo" [ngClass]="{'hide': darkModeAction}">
+                </a>
+            </div>
+        </div>
+        <nav class="nav-bar" [ngClass]="isNavActive ? 'act-drawer' : '' ">
+            <ul class="nav-list">
+                <li class="menu-li"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                <li class="menu-li"><a routerLink="/about" routerLinkActive="active">About</a></li>
+                <li class="menu-li"><a routerLink="/services" routerLinkActive="active">Services</a></li>
+                <li class="menu-li"><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+                <li class="menu-li"><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+                <li class="menu-li"><a routerLink="/blog" routerLinkActive="active">Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="control-box">
+            <div class="theme-mode" (click)="themeModeChange()" [ngClass]="{'dark_mode': darkModeAction}">
+                <span class="light-mode"><i class="bi bi-sun"></i></span>
+                <span class="dark-mode"><i class="bi bi-moon-stars"></i></span>
+            </div>
+            <div class="menu-act" (click)="onButtonClick()"><i class="bi bi-list"></i></div>
+        </div>
+    </div>
+</header>
